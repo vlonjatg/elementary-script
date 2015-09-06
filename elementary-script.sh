@@ -72,6 +72,7 @@ GUI=$(zenity --list --checklist \
     TRUE "Install Gnome media recorder" "Add action description later..." \
     TRUE "Install Trimage" "Add action description later..." \
     TRUE "Install GPick" "Add action description later..." \
+    TRUE "Combine elementaryPlus and Numic icon sets" "Add action description later..." \
 	TRUE "Fix Broken Packages" "Fixes the broken packages." \
 	TRUE "Clean-Up Junk" "Removes unnecessary packages and the local repository of retrieved package files." \
 	TRUE "Post-install system update" "Update the package list, the system packages and Applications." \
@@ -732,6 +733,16 @@ then
 	echo "Installing Trimage..."
 	echo ""
 	sudo apt-get -y install gpick
+fi
+
+# Install Combine elementaryPlus and Numic icon sets
+if [[ $GUI == *"Combine elementaryPlus and Numic icon sets"* ]]
+then
+	clear
+	echo "Combineing elementaryPlus and Numic icon sets..."
+	echo ""
+	sudo curl https://raw.githubusercontent.com/michaldaniel/elementary-script/master/resources/numix-circle.index.theme > /usr/share/icons/Numix-Circle/index.theme
+	sudo curl https://raw.githubusercontent.com/michaldaniel/elementary-script/master/resources/elementay-plus.index.theme > /usr/share/icons/elementaryPlus/index.theme
 fi
 
 # Fix Broken Packages Action
