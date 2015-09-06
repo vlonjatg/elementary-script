@@ -122,7 +122,7 @@ then
 	clear
 	echo "Installing Extra Multimedia Codecs..."
 	echo ""
-	sudo apt-get -y install libavcodec-extra-53
+	sudo apt-get -y install libavcodec-extra-54
 fi
 
 # Install Support for Encrypted DVD's Action
