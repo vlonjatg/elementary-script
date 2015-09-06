@@ -11,7 +11,7 @@ GUI=$(zenity --list --checklist \
 	--column=Actions \
 	--column=Description \
 	TRUE "Update System" "Updates the package lists, the system packages and Applications."  \
-	TRUE "Install Proprietary Drivers" "Installs the proprietary drivers."  \
+	FALSE "Install Proprietary Drivers" "Installs the proprietary drivers."  \
 	TRUE "Speed-Up Memory" "Installs preload and enables zRAM." \
 	TRUE "Install Ubuntu Restricted Extras" "Installs commonly used applications with restricted copyright (mp3, avi, mpeg, TrueType, Java, Flash, Codecs)." \
 	TRUE "Install Extra Multimedia Codecs" "Installs extra multimedia codecs." \
@@ -27,6 +27,51 @@ GUI=$(zenity --list --checklist \
 	TRUE "Install Atom" "Installs Atom. A hackable text editor for the 21st Century." \
 	FALSE "Install Sublime Text 3" "Installs Sublime Text 3. A sophisticated text editor for code, markup and prose." \
 	TRUE "Install LibreOffice" "Installs LibreOffice. A powerful office suite." \
+    TRUE "Install Numix Circle icon theme" "Add action description later..." \
+    TRUE "Install Elementary tweaks" "Add action description later..." \
+    TRUE "Install additional plank themes" "Add action description later..." \
+    TRUE "Install Indicator USB" "Add action description later..." \
+    TRUE "Install Indicator Multiload" "Add action description later..." \
+    TRUE "Install Y PPA Manager" "Add action description later..." \
+    TRUE "Install f.lux" "Add action description later..." \
+    TRUE "Install Gnome system monitor" "Add action description later..." \
+    TRUE "Install Caffeine" "Add action description later..." \
+    TRUE "Install Copyq" "Add action description later..." \
+    TRUE "Install Gnome ENCFS manager" "Add action description later..." \
+    TRUE "Install MEGASync client" "Add action description later..." \
+    TRUE "Install Currency" "Add action description later..." \
+    TRUE "Install Gnome disk utility" "Add action description later..." \
+    TRUE "Install Configurator" "Add action description later..." \
+    TRUE "Install MenuLibre" "Add action description later..." \
+    TRUE "Install ElementaryPlus icons" "Add action description later..." \
+    TRUE "Install Gimp" "Add action description later..." \
+    TRUE "Install Envelope" "Add action description later..." \
+    TRUE "Install Webby" "Add action description later..." \
+    TRUE "Install FileZilla" "Add action description later..." \
+    TRUE "Install FreshPlayerPlugin" "Add action description later..." \
+    TRUE "Install Keys and Passwords" "Add action description later..." \
+    TRUE "Install Inkscape" "Add action description later..." \
+    TRUE "Install Remmina" "Add action description later..." \
+    TRUE "Install Gnome maps" "Add action description later..." \
+    TRUE "Install Mark my words" "Add action description later..." \
+    TRUE "Install Mumble" "Add action description later..." \
+    TRUE "Install Brasero" "Add action description later..." \
+    TRUE "Install NaSC" "Add action description later..." \
+    TRUE "Install Pinta" "Add action description later..." \
+    TRUE "Install SmartGit" "Add action description later..." \
+    TRUE "Install Spotify" "Add action description later..." \
+    TRUE "Install Tomato" "Add action description later..." \
+    TRUE "Install Vocal" "Add action description later..." \
+    TRUE "Install Relay" "Add action description later..." \
+    TRUE "Install Imgur contract" "Add action description later..." \
+    TRUE "Install Hourglass" "Add action description later..." \
+    TRUE "Install Steam" "Add action description later..." \
+    TRUE "Install Ubuntu make" "Add action description later..." \
+    TRUE "Install Simple screen recorder" "Add action description later..." \
+    TRUE "Install Cheese" "Add action description later..." \
+    TRUE "Install Gnome media recorder" "Add action description later..." \
+    TRUE "Install Trimage" "Add action description later..." \
+    TRUE "Install GPick" "Add action description later..." \
 	TRUE "Fix Broken Packages" "Fixes the broken packages." \
 	TRUE "Clean-Up Junk" "Removes unnecessary packages and the local repository of retrieved package files." \
 	TRUE "Post-install system update" "Update the package list, the system packages and Applications." \
