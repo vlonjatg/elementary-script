@@ -28,6 +28,7 @@ GUI=$(zenity --list --checklist \
 	TRUE "Install Android Studio" "Add action description later..." \
 	TRUE "Install Temperature Menagment" "Add action description later..." \
 	TRUE "Install Viewnior" "Add action description later..." \
+	TRUE "Install Zeal" "Add action description later..." \
 	TRUE "Fix Broken Packages" "Fixes the broken packages." \
 	TRUE "Clean-Up Junk" "Removes unnecessary packages and the local repository of retrieved package files." \
 	TRUE "Post-install system update" "Update the package list, the system packages and Applications." \
@@ -230,6 +231,16 @@ then
 	sudo apt-get install viewnior
 fi
 
+# Install Zeal
+if [[ $GUI == *"Install Zeal"* ]]
+then
+	clear
+	echo "Zeal..."
+	echo ""
+	sudo add-apt-repository ppa:zeal-developers/ppa
+	sudo apt-get update
+	sudo apt-get install zeal
+fi
 
 # Fix Broken Packages
 if [[ $GUI == *"Fix Broken Packages"* ]]
