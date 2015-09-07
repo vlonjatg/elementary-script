@@ -9,7 +9,7 @@ This is my personal fork of elementary-script. A tiny script that helps you perf
 If for some reason we have similar taste when it comes to the software or you just find it useful, copy and paste the following lines into a terminal window in order to run the script.
 
 ```bash
-curl https://raw.githubusercontent.com/michaldaniel/elementary-script/master/elementary-script.sh > /tmp/elementary-script.sh && chmod +x /tmp/elementary-script.sh && /tmp/elementary-script.sh
+curl https://raw.githubusercontent.com/vlonjatg/elementary-script/master/elementary-script.sh > /tmp/elementary-script.sh && chmod +x /tmp/elementary-script.sh && /tmp/elementary-script.sh
 ```
 
 ## elementary OS Version Compatibility
