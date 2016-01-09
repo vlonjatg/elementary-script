@@ -21,13 +21,11 @@ GUI=$(zenity --list --checklist \
 	TRUE "Install Gnome system monitor" "Add action description later..." \
 	TRUE "Install MenuLibre" "Add action description later..." \
 	TRUE "Install Gimp" "Add action description later..." \
-	TRUE "Install NaSC" "Add action description later..." \
 	TRUE "Install Spotify" "Add action description later..." \
 	TRUE "Install Vocal" "Add action description later..." \
 	TRUE "Install Java JDK" "Add action description later..." \
 	TRUE "Install Android Studio" "Add action description later..." \
 	TRUE "Install Temperature Menagment" "Add action description later..." \
-	TRUE "Install Viewnior" "Add action description later..." \
 	TRUE "Install Zeal" "Add action description later..." \
 	TRUE "Fix Broken Packages" "Fixes the broken packages." \
 	TRUE "Clean-Up Junk" "Removes unnecessary packages and the local repository of retrieved package files." \
@@ -151,17 +149,6 @@ then
 	sudo apt-get -y install gimp
 fi
 
-# Install NaSC
-if [[ $GUI == *"Install NaSC"* ]]
-then
-	clear
-	echo "Installing NaSC..."
-	echo ""
-	sudo add-apt-repository -y ppa:nasc-team/daily
-	sudo apt-get -y update
-	sudo apt-get -y install nasc
-fi
-
 # Install Spotify
 if [[ $GUI == *"Install Spotify"* ]]
 then
@@ -218,17 +205,6 @@ then
 	sudo apt-get update
 	sudo apt-get install tlp tlp-rdw
 	sudo tlp start
-fi
-
-# Install Viewnior
-if [[ $GUI == *"Install Viewnior"* ]]
-then
-	clear
-	echo "Viewnior..."
-	echo ""
-	sudo add-apt-repository ppa:desdelinux/viewnior
-	sudo apt-get update
-	sudo apt-get install viewnior
 fi
 
 # Install Zeal
