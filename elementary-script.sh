@@ -25,6 +25,7 @@ GUI=$(zenity --list --checklist \
 	TRUE "Install Vocal" "Add action description later..." \
 	TRUE "Install Java JDK" "Add action description later..." \
 	TRUE "Install Android Studio" "Add action description later..." \
+	TRUE "Install Git" "Add action description later..."
 	TRUE "Install Temperature Menagment" "Add action description later..." \
 	TRUE "Install Zeal" "Add action description later..." \
 	TRUE "Fix Broken Packages" "Fixes the broken packages." \
@@ -193,6 +194,15 @@ then
 	sudo apt-get update
 	sudo apt-get install android-studio
 	sudo apt-get install lib32z1 lib32ncurses5 lib32bz2-1.0 lib32stdc++6
+fi
+
+# Install Git
+if [[ $GUI == *"Install Git"* ]]
+then
+	clear
+	echo "Installing Git..."
+	echo ""
+	sudo apt-get install git-all
 fi
 
 # Install Temperature Menagment
